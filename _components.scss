@@ -1,3 +1,29 @@
+.boxes {
+    display: grid;
+    grid-template-columns:  repeat(4, 220px);
+    grid-template-rows: repeat(2, 240px);
+}
+
+.box1 {
+    width: 220px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: $moderate-violet;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+.box2 {
+    width: 220px;
+    height: 240px;
+    background-color: $very-dark-grayish-blue;
+    border-radius: 10px;
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+}
+
 .attribution {
     font-size: 11px; text-align: center;
 }
