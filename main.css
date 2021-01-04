@@ -5,9 +5,21 @@ html {
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (200px)[5];
+      grid-template-rows: repeat(5, 200px);
+  -ms-grid-columns: (300px)[5];
+      grid-template-columns: repeat(5, 300px);
 }
 
 .boxes {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (280px)[5];
@@ -74,6 +86,10 @@ body {
 }
 
 .attribution {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 6;
+  grid-row: 6;
   font-size: 11px;
   text-align: center;
 }

@@ -1,4 +1,6 @@
 .boxes {
+    grid-row: 2/4;
+    grid-column: 2/4;
     display: grid;
     grid-template-columns:  repeat(5, 280px);
     grid-template-rows: repeat(3, 300px);
@@ -45,6 +47,8 @@
 }
 
 .attribution {
+    display: grid;
+    grid-row: 6;
     font-size: 11px; text-align: center;
 }
 
